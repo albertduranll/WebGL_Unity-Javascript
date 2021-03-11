@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | UnityWebLoader</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/suuuuu.json");
+    </script>
+  </head>
+  <body>
+    <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+
+    <button type="button" style="width: 190px; height: 60px; margin-top: 10px;" onclick="unityInstance.SendMessage('UI_Creator','InstantiateShapes', 'box')">BOX</button>
+    <button type="button" style="width: 190px; height: 60px; margin-top: 10px;" onclick="unityInstance.SendMessage('UI_Creator','InstantiateShapes', 'box1')">BOX1</button>
+    <button type="button" style="width: 190px; height: 60px; margin-top: 10px;" onclick="unityInstance.SendMessage('UI_Creator','InstantiateShapes', 'circle')">CIRCLE</button>
+    <button type="button" style="width: 190px; height: 60px; margin-top: 10px;" onclick="unityInstance.SendMessage('UI_Creator','InstantiateShapes', 'circle1')">CIRCLE1</button>
+    <button type="button" style="width: 190px; height: 60px; margin-top: 10px;" onclick="unityInstance.SendMessage('UI_Creator','InstantiateShapes', 'line')">LINE</button>
+  </body>
+</html>
